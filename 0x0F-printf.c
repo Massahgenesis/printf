@@ -33,11 +33,10 @@ int _printf(const char *format, ...)
 				counter += _printb((int)va_arg(args, int));
 			else
 			{
-				/*if (format[index] == '\0')
+				if (format[index] == '\0')
 					return (counter);
 				counter += _printc('%');
-				counter += _printc(format[index]);*/
-				/*_prints("Unknown: [%p]\n", format[i]);*/
+				counter += _printc(format[index]);
 			}
 		}
 		else
