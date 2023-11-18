@@ -31,6 +31,8 @@ int _printf(const char *format, ...)
 				counter += _printi((int)va_arg(args, int));
 			else if (format[index] == 'b')
 				counter += _printb((int)va_arg(args, int));
+			else if (format[index] == '\0')
+				counter = -1;
 			else
 			{
 				if (format[index] == '\0')

@@ -8,7 +8,7 @@
 
 int _printb(int number)
 {
-	int n; 
+	int n;
 
 	if (number < 0)
 	{
